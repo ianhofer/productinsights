@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <title>Popup de Países</title>
+  <style>
+    
+    html {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      height: 100%;
+      background-color: #f0f0f0;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      width: 100%;
+      box-sizing: border-box;
+      background-image: url("https://s3.eu-central-2.wasabisys.com/w.storage.screenshotapi.net/www_clickrtrckr_com_lr9kh11_546x6md__uid_7520_6475808db14a.png");
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-color: #f0f0f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    
+    @media (max-width: 480px) {
+      body {
+        background-image: url("https://s3.eu-central-2.wasabisys.com/w.storage.screenshotapi.net/www_clickrtrckr_com_lr9kh11_546x6md__uid_7520_2dcb1ff63ac8.png") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-attachment: scroll;
+      }
+    }
+  </style>
+  
+
+<!-- FLOWPAGES_SEO -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Product","name":"Katori","description":"Katori | Add heading text here","url":"https://www.clickrtrckr.com/LR9KH11/546X6MD/?uid=7520"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Katori?","acceptedAnswer":{"@type":"Answer","text":"Katori | Add heading text here"}},{"@type":"Question","name":"Where can I purchase Katori?","acceptedAnswer":{"@type":"Answer","text":"You can purchase Katori at https://www.clickrtrckr.com/LR9KH11/546X6MD/?uid=7520."}},{"@type":"Question","name":"Is there a warranty for Katori?","acceptedAnswer":{"@type":"Answer","text":"Warranty information is not provided in the page."}},{"@type":"Question","name":"Are there any ingredients listed for Katori?","acceptedAnswer":{"@type":"Answer","text":"Ingredients information is not provided in the page."}}]}]}
+</script>
+<!-- /FLOWPAGES_SEO -->
+</head>
+<body>
+  
+<!-- Country Selection Popup -->
+<div id="country-popup-modern" style="display: none;">
+  <a href="https://www.clickrtrckr.com/LR9KH11/546X6MD/?uid=7520" class="country-popup-backdrop-link ratoeira-trackable" target="_self" rel="noopener" aria-label="Select your Country"></a>
+  <div class="country-popup-container-modern">
+    <div class="country-popup-content-modern">
+      <h2 class="country-popup-title-modern">Select your Country</h2>
+      <p class="country-popup-message-modern">Please select your country to continue.</p>
+      
+      <div class="country-flags-grid-modern">
+        
+    <a href="https://www.clickrtrckr.com/LR9KH11/546X6MD/?uid=7520" class="country-flag-item-modern ratoeira-trackable" target="_self" rel="noopener">
+      <div class="flag-icon-modern" style="background-image: url('https://flagcdn.com/w320/us.png')"></div>
+    </a>
+  
+    <a href="https://www.clickrtrckr.com/LR9KH11/546X6MD/?uid=7520" class="country-flag-item-modern ratoeira-trackable" target="_self" rel="noopener">
+      <div class="flag-icon-modern" style="background-image: url('https://flagcdn.com/w320/ca.png')"></div>
+    </a>
+  
+    <a href="https://www.clickrtrckr.com/LR9KH11/546X6MD/?uid=7520" class="country-flag-item-modern ratoeira-trackable" target="_self" rel="noopener">
+      <div class="flag-icon-modern" style="background-image: url('https://flagcdn.com/w320/gb.png')"></div>
+    </a>
+  
+    <a href="https://www.clickrtrckr.com/LR9KH11/546X6MD/?uid=7520" class="country-flag-item-modern ratoeira-trackable" target="_self" rel="noopener">
+      <div class="flag-icon-modern" style="background-image: url('https://flagcdn.com/w320/au.png')"></div>
+    </a>
+  
+      </div>
+    </div>
+  </div>
+</div>
+  
+<style type="text/css">
+  #country-popup-modern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000001;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  #country-popup-modern.country-popup-visible-modern {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .country-popup-container-modern {
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    animation: countryPopupSlideIn 0.3s ease-out;
+    max-width: 450px;
+    min-width: 320px;
+    width: 100%;
+    max-height: 90vh;
+    text-align: center;
+    position: relative;
+    border: 1px solid #e2e8f0;
+    z-index: 1;
+    transform: scale(0.95);
+    transition: transform 0.3s ease-out;
+    margin: auto;
+  }
+
+  #country-popup-modern.country-popup-visible-modern .country-popup-container-modern {
+    transform: scale(1);
+  }
+
+
+  .country-popup-backdrop-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: 0;
+    background: transparent;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .country-popup-content-modern {
+    position: relative;
+    z-index: 1;
+  }
+
+  .country-popup-title-modern {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 12px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .country-popup-message-modern {
+    font-size: 15px;
+    color: #6b7280;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.4;
+  }
+
+  .country-flags-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+    gap: 4px;
+    margin: 20px 0;
+    padding: 4px;
+    max-width: 100%;
+    justify-items: center;
+  }
+
+  .country-flag-item-modern {
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    text-decoration: none;
+  }
+
+  .country-flag-item-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+  }
+
+  .flag-icon-modern {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes countryPopupSlideIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .country-popup-container-modern {
+      padding: 24px;
+      margin: 16px;
+      max-width: none;
+    }
+
+    .country-popup-title-modern {
+      font-size: 20px;
+    }
+
+    .country-flags-grid-modern {
+      gap: 12px;
+    }
+
+    .country-flag-item-modern {
+      width: 70px;
+      height: 70px;
+    }
+
+    .flag-icon-modern {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .country-popup-container-modern {
+      padding: 20px;
+      margin: 12px;
+    }
+
+    .country-popup-title-modern {
+      font-size: 18px;
+    }
+
+    .country-popup-message-modern {
+      font-size: 14px;
+    }
+
+    .country-flags-grid-modern {
+      gap: 10px;
+    }
+
+    .country-flag-item-modern {
+      width: 65px;
+      height: 65px;
+    }
+
+    .flag-icon-modern {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  
+</style>
+  
+<script>
+(function(){
+  'use strict';
+
+  var BASE_URL = "https://www.clickrtrckr.com/LR9KH11/546X6MD/?uid=7520";
+  var clickFired = false;
+
+  function isEditorPreview(){
+    return document.documentElement.classList.contains('flowpages-editor-preview');
+  }
+
+  function withParams(url){
+    if (!url || url === '#') return url;
+    var params = new URLSearchParams(window.location.search).toString();
+    if (!params) return url;
+    return url + (url.indexOf('?') !== -1 ? '&' : '?') + params;
+  }
+
+  function closestFrom(target, selector){
+    if (!target || typeof target.closest !== 'function') return null;
+    return target.closest(selector);
+  }
+
+  var finalUrl = withParams(BASE_URL);
+
+  var fallbackLink = document.createElement('a');
+  fallbackLink.href = finalUrl;
+  fallbackLink.target = '_self';
+  fallbackLink.className = 'ratoeira-trackable';
+  fallbackLink.style.display = 'none';
+
+  function doRedirect(){
+    if (clickFired || isEditorPreview()) return;
+    clickFired = true;
+    fallbackLink.click();
+  }
+
+  function showPopup(){
+    var popup = document.getElementById("country-popup-modern");
+    if (!popup) return;
+    popup.style.display = 'flex';
+    if ("country-popup-visible-modern") popup.classList.add("country-popup-visible-modern");
+  }
+
+  function bindAffiliateLinks(root){
+    var links = root.querySelectorAll('a[href]');
+    Array.prototype.forEach.call(links, function(link){
+      link.href = finalUrl;
+      link.addEventListener('click', function(e){
+        if (isEditorPreview()){
+          e.preventDefault();
+          return;
+        }
+        clickFired = true;
+      });
+    });
+  }
+
+  function initPopup(){
+    document.body.appendChild(fallbackLink);
+    showPopup();
+    var popup = document.getElementById("country-popup-modern");
+    bindAffiliateLinks(popup || document);
+    
+  }
+
+  document.addEventListener('keydown', function(e){
+    if (clickFired) return;
+    if (e.key === 'Escape'){
+      doRedirect();
+      return;
+    }
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    if (closestFrom(document.activeElement, "a[href], button, input, select, textarea, [role=\"button\"]")) return;
+    doRedirect();
+  });
+
+  if (document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initPopup);
+  } else {
+    initPopup();
+  }
+})();
+</script>
+  <!-- Flow Tracking: Katori -->
+<script src="https://flow-tracking-cdn-production.up.railway.app/v2/loader.js"
+        data-track="65eb19b0-f051-43ed-a250-a32698b69d4f"
+        data-endpoint="https://api.flowtrackingtool.com"
+        data-cdn-base="https://flow-tracking-cdn-production.up.railway.app"
+        data-api-base="https://api.flowtrackingtool.com"
+        data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0cmFja0lkIjoiNjVlYjE5YjAtZjA1MS00M2VkLWEyNTAtYTMyNjk4YjY5ZDRmIiwiYXVkIjoiZmxvd3RyazplbWJlZCIsImlzcyI6ImZsb3d0cmsiLCJraWQiOiIzZWRmN2E4NzU4ZGY3ZmMzIiwiaWF0IjoxNzg5MzIzNzM1LCJleHAiOjE4MjA4NTk3MzV9.9IgszSw1ykAZWytD67fF8DMp4tEbMQ40CztVqdoLb7Q"
+        async crossorigin="anonymous"></script>
+</body>
+</html>
